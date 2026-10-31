@@ -1,0 +1,35 @@
+{
+  "name": "clareza-financas",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Planejamento financeiro pessoal local com React, TypeScript e SQLite",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=24.13.0 <25"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit && vite build",
+    "start": "node scripts/start.mjs",
+    "start:lan": "node scripts/start.mjs --lan",
+    "test": "node --test tests/*.test.ts",
+    "format": "prettier --write src shared server scripts tests *.json *.ts *.md"
+  },
+  "dependencies": {
+    "pdfjs-dist": "6.4.299",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.2",
+    "prettier": "3.6.2",
+    "typescript": "5.9.3",
+    "vite": "8.0.13"
+  }
+}
